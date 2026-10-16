@@ -16,25 +16,7 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-sorted_variables = {"mutable": [], "immutable": []}
-
-
-def mut_immut(*args) -> dict:
-    for arg in args:
-        if not isinstance(arg, (int, float, tuple, bool, str)):
-            sorted_variables["mutable"].append(arg)
-        else:
-            sorted_variables["immutable"].append(arg)
-    return sorted_variables
-
-
-mut_immut(777, 3.14, False, "Richard", [
-    "The Shawshank Redemption",
-    "The Lord of the Rings: The Return of the King",
-    "Pulp Fiction",
-    "The Good, the Bad and the Ugly",
-    "The Matrix",
-], ("michel", "michel@gmail.com", "12345678"), {
-    "John": 4,
-    "Sergio": 3,
-}, {1, 2, 25})
+sorted_variables = {"mutable": [my_favourite_films, marks,
+                                collection_of_coins],
+                    "immutable": [lucky_number, pi, one_is_a_prime_number,
+                                  one_is_a_prime_number, name, profile_info]}
