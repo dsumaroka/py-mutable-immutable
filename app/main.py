@@ -25,8 +25,6 @@ def mut_immut(*args) -> dict:
             sorted_variables["mutable"].append(arg)
         else:
             sorted_variables["immutable"].append(arg)
-    print(f"immutable: {sorted_variables["immutable"]}\n"
-          f"mutable: {sorted_variables['mutable']}")
     return sorted_variables
 
 
